@@ -5,7 +5,6 @@ import dotenv from 'dotenv'
 import userRoutes from './routes/users.js'
 import quesRoutes from './routes/questions.js'
 import ansRoutes from './routes/ansRoutes.js'
-import fbBtnRoutes from './routes/fbBtnRoutes.js'
 import socialMediaRoutes from './routes/socialMediaRoutes.js'
 
 const app = express()
@@ -19,7 +18,6 @@ app.use(cors())
 app.use('/user', userRoutes)
 app.use('/questions', quesRoutes)
 app.use('/answers', ansRoutes)
-app.use('/fb', fbBtnRoutes)
 app.use('/socialmedia', socialMediaRoutes)
 
 // ----- server ------
